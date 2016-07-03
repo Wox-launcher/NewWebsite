@@ -2,22 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Wox</title>
     <script src="http://cdn.bootcss.com/marked/0.3.5/marked.min.js"></script>
     <script src="http://cdn.bootcss.com/jquery/3.0.0/jquery.min.js"></script>
-    <style>
-        .markdown-body {
-            box-sizing: border-box;
-            min-width: 200px;
-            max-width: 980px;
-            margin: 0 auto;
-            padding: 45px;
-        }
-    </style>
+
 </head>
 <body>
+<div class="menu">
+    <div class="pure-menu pure-menu-horizontal">
+        <a href="#" class="pure-menu-heading pure-menu-link">Wox</a>
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">English</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">中文</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Plugins</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Documentation</a></li>
+        </ul>
+    </div>
+</div>
 <div id="readme" class="markdown-body">
-
 </div>
 </body>
 
@@ -38,5 +41,49 @@
 </script>
 
 <link rel="stylesheet" href="http://cdn.jsdelivr.net/github-markdown-css/2.3.0/github-markdown.css">
+<style>
+    .markdown-body {
+        box-sizing: border-box;
+        min-width: 200px;
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 45px;
+    }
+    .menu {
+        background: #191818;
+    }
+    .pure-menu {
+        background: #191818;
+        color: #777;
+        box-sizing: border-box;
+        min-width: 200px;
+        max-width: 980px;
+        margin: 0 auto;
+        padding-right: 45px;
+        direction: rtl;
+    }
+
+    .pure-menu-link {
+        margin: 10px;
+    }
+
+    .pure-menu a {
+        color: #999;
+    }
+
+    .pure-menu li a:hover, .pure-menu a:hover {
+        background: #333;
+    }
+
+    .pure-menu-selected .pure-menu-link, .pure-menu-item a:focus, .pure-menu a:focus {
+        color: #fff !important;
+    }
+
+    .pure-menu-selected, .pure-menu-item a:focus, .pure-menu-selected a:hover, .pure-menu a:focus {
+        background: #1f8dd6 !important;
+    }
+
+</style>
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
 
 </html>
